@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf - eventi</title>
+    <style>
+      body {
+        font-family: system-ui, Arial, sans-serif;
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 16px;
+      }
+
+      section {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 12px 16px;
+        margin-bottom: 16px;
+      }
+
+      .anteprima {
+        font-size: 1.4rem;
+        color: #2e6db4;
+        min-height: 1.5em;
+      }
+
+      .errore {
+        color: #b00020;
+      }
+
+      #lista li {
+        display: flex;
+        justify-content: space-between;
+        padding: 4px 0;
+      }
+    </style>
+    <script src="eventi.js" defer></script>
+  </head>
+
+  <body>
+    <h1>Eventi</h1>
+
+    <section>
+      <h2>1. click</h2>
+      <button type="button" id="aggiungi">+1 pagina letta</button>
+      <p>Pagine lette: <strong id="contatore">0</strong></p>
+    </section>
+
+    <section>
+      <h2>2. input: mentre si scrive</h2>
+      <label for="titolo">Titolo</label>
+      <input type="text" id="titolo" maxlength="10" />
+      <p class="anteprima" id="anteprima"></p>
+      <p><span id="caratteri">0</span>/10 caratteri</p>
+    </section>
+
+    <section>
+      <h2>3. change: scelta da un elenco</h2>
+      <label for="genere">Genere</label>
+      <select id="genere">
+        <option value="">-- scegli --</option>
+        <option value="Romanzo">Romanzo</option>
+        <option value="Giallo">Giallo</option>
+        <option value="Saggio">Saggio</option>
+      </select>
+      <p id="scelta"></p>
+    </section>
+
+    <section>
+      <h2>4. submit: un form che non ricarica la pagina</h2>
+      <form id="nuovo-libro">
+        <input type="text" name="titolo" placeholder="Titolo" aria-label="Titolo" />
+        <input type="text" name="autore" placeholder="Autore" aria-label="Autore" />
+        <button type="submit">Aggiungi</button>
+      </form>
+      <p class="errore" id="errore"></p>
+      <ul id="lista"></ul>
+    </section>
+
+  </body>
+
+</html>

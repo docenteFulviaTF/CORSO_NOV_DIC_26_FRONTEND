@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf - semantica</title>
+  </head>
+
+  <body>
+    <!-- COMMENTO AGGIUNTO PER COMMIT -->
+    <!-- SEMANTICA: usare il tag che dice COSA è il contenuto, non come appare.
+         Nel browser questi tag non cambiano l'aspetto della pagina, ma:
+         - i lettori di schermo (per chi non vede) permettono di saltare al menu o al contenuto;
+         - Google capisce qual è il contenuto principale;
+         - chi legge il codice capisce la struttura senza leggere tutto.
+
+         Schema tipico:
+         ┌──────────────── header ────────────────┐
+         │ logo            nav                    │
+         ├──────────── main ───────────┬─ aside ──┤
+         │ section / article           │          │
+         ├──────────────── footer ────────────────┤
+    -->
+
+    <header>
+      <!-- header: l'intestazione della pagina (o di un article) -->
+      <p><strong>Bookshelf</strong></p>
+      <nav>
+        <!-- nav: il menu di navigazione principale.
+             Un menu è una lista di link: si scrive con ul/li -->
+        <ul>
+          <li><a href="#novita">Novità</a></li>
+          <li><a href="#consigliati">Consigliati</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+          <li><a href="#">Aggiunto per prova</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- main: il contenuto principale. UNO solo per pagina -->
+      <h1>Il catalogo dei libri del corso</h1>
+
+      <section id="novita">
+        <!-- section: una parte della pagina con un suo titolo -->
+        <h2>Novità</h2>
+
+        <article>
+          <!-- article: un contenuto che ha senso anche da solo,
+               fuori dalla pagina (un post, una notizia, una scheda libro) -->
+          <h3>Il barone rampante</h3>
+          <p>Italo Calvino, 1957</p>
+          <p>Cosimo sale su un albero a dodici anni e non ne scende più.</p>
+        </article>
+
+        <article>
+          <h3>Il nome della rosa</h3>
+          <p>Umberto Eco, 1980</p>
+          <p>Un'abbazia, sette giorni, una serie di morti misteriose.</p>
+        </article>
+      </section>
+
+      <section id="consigliati">
+        <h2>Consigliati</h2>
+        <p>I libri più prestati del mese.</p>
+      </section>
+    </main>
+
+    <aside>
+      <!-- aside: contenuto collegato ma secondario (box laterale, link correlati) -->
+      <h2>Lo sapevi?</h2>
+      <p>Calvino ha scritto anche fiabe italiane.</p>
+    </aside>
+    <!-- <p>questo è il simbolo del maggiore: ></p>
+    <p>questo è il simbolo del minore: &lt;</p> -->
+
+    <footer id="contatti">
+      <!-- footer: piè di pagina. address: i contatti di chi ha scritto la pagina -->
+      <address>
+        Biblioteca Bookshelf - <a href="mailto:biblioteca@example.com">biblioteca@example.com</a>
+      </address>
+      <p><small>&copy; 2026 Bookshelf</small></p>
+      <!-- &copy; è un'ENTITÀ: un modo di scrivere caratteri speciali.
+           Le più usate: &lt; per <  &gt; per >  &amp; per &  &nbsp; spazio che non va a capo -->
+    </footer>
+
+    <!-- E il div? div e span non hanno significato: si usano solo per
+         raggruppare elementi a cui dare uno stile (domani, con il CSS).
+         Prima di scrivere un div, chiedersi se esiste un tag semantico adatto. -->
+  </body>
+
+</html>

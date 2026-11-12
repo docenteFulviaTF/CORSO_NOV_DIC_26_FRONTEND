@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  /* footer sempre in fondo: il body è una colonna alta almeno quanto la finestra */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap; /* su uno schermo stretto il menu va sotto il logo */
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 12px 20px;
+  background-color: #0b2e63;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  flex: 1; /* il menu prende lo spazio libero, così margin-left: auto ha spazio da usare */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu .attivo {
+  border-bottom: 2px solid white;
+}
+
+.menu .accedi {
+  margin-left: auto;
+}
+
+.menu .accedi a {
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+main {
+  flex: 1; /* main si allarga e spinge il footer in fondo */
+  padding: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 20px;
+  background-color: #222;
+  color: #ddd;
+}
+
+.footer .colonna {
+  flex: 1;
+  min-width: 160px; /* su uno schermo stretto le colonne vanno a capo invece di uscire */
+}
+
+.footer h2 {
+  font-size: 1rem;
+  color: white;
+}

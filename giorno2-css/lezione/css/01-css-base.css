@@ -1,0 +1,64 @@
+/* UNA REGOLA CSS
+   selettore {
+     proprietà: valore;
+   }
+*/
+
+/* SELETTORE DI ELEMENTO: tutti gli elementi di quel tipo */
+
+body {
+  font-family: Arial, sans-serif; /* se Arial manca, un font senza grazie qualsiasi */
+  font-size: 18px;
+  color: #222222; /* colore del testo */
+  background-color: #f6f7f9; /* colore di sfondo */
+}
+
+/* SELETTORE DI CLASSE: punto + nome. Si usa su quanti elementi si vuole */
+.autore {
+  color: gray;
+  font-style: italic;
+  text-align: center;
+}
+
+.nota {
+  background-color: lightyellow;
+  font-weight: bold;
+}
+
+/* SELETTORE DI ID: cancelletto + nome. Un solo elemento per pagina.
+    */
+#unico {
+  color: darkred;
+}
+#unico:hover {
+  color: greenyellow;
+}
+
+/* SELETTORE DISCENDENTE (con lo spazio): i p che stanno DENTRO .trama */
+.trama p {
+  color: darkgreen;
+}
+
+/* PSEUDO-CLASSI: uno stato dell'elemento */
+a {
+  color: #2e6db4;
+  text-decoration: none; /* toglie la sottolineatura */
+}
+
+a:hover {
+  /*questa è la pseudoclasse*/
+  text-decoration: underline;
+  font-size: 20px; /* quando il mouse è sopra */
+}
+
+/* :focus = il campo di un form in cui si sta scrivendo. Esempio:
+   input:focus { border-color: blue; } */
+
+/* COLORI: per nome (gray), esadecimale (#2e6db4), rgb(46, 109, 180).
+   I codici si prendono dal selettore di colori di VS Code: si passa il mouse sul quadratino.
+
+   CASCATA: se due regole dicono cose diverse allo stesso elemento,
+   vince la più specifica (id > classe > elemento); a parità vince l'ultima scritta.
+
+   STRUMENTI PER SVILUPPATORI (F12 > Elements): si seleziona un elemento
+   e a destra si vedono le regole che lo interessano. Si possono cambiare i valori lì per provare: le modifiche spariscono ricaricando la pagina. */

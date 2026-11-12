@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="40" viewBox="0 0 160 40">
+  <rect x="2" y="6" width="8" height="28" fill="#2e6db4"/>
+  <rect x="12" y="10" width="8" height="24" fill="#cfe0f2"/>
+  <rect x="22" y="4" width="8" height="30" fill="#ffffff"/>
+  <rect x="0" y="34" width="34" height="3" fill="#ffffff"/>
+  <text x="42" y="28" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">Bookshelf</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450">
+  <rect width="300" height="450" fill="#cfe0f2"/>
+  <rect x="110" y="160" width="80" height="110" rx="4" fill="none" stroke="#2e6db4" stroke-width="6"/>
+  <line x1="125" y1="190" x2="175" y2="190" stroke="#2e6db4" stroke-width="4"/>
+  <line x1="125" y1="210" x2="175" y2="210" stroke="#2e6db4" stroke-width="4"/>
+  <text x="150" y="330" font-family="Arial, sans-serif" font-size="20" fill="#2e6db4" text-anchor="middle">Copertina non disponibile</text>
+</svg>

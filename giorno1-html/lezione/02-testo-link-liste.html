@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Testo, link e liste</title>
+    </head>
+
+    <body>
+        <!-- TITOLI: da h1 a h6. Un solo h1 per pagina; non si saltano livelli
+         (dopo h2 viene h3, non h5). Si sceglie per IMPORTANZA, non per grandezza:
+         la grandezza si cambia con il CSS. -->
+        <h1>Italo Calvino</h1>
+        <h2>Biografia</h2>
+        <p>
+            Italo Calvino (1923-1985) è stato uno scrittore italiano.
+            Ha scritto romanzi, racconti e saggi.
+        </p>
+
+        <h2>Opere</h2>
+        <h3>Romanzi</h3>
+
+        <!-- LISTA NON ORDINATA: ul (unordered list) + li (list item) -->
+        <ul>
+            <li>Il barone rampante</li>
+            <li>Le città invisibili</li>
+            <li>Se una notte d'inverno un viaggiatore</li>
+        </ul>
+
+        <h3>I più letti</h3>
+        <!-- LISTA ORDINATA: ol, numerata automaticamente -->
+        <ol>
+            <li>Il barone rampante</li>
+            <li>Marcovaldo</li>
+            <li>Le città invisibili</li>
+        </ol>
+
+        <!-- LISTA ANNIDATA: la ul interna sta DENTRO un li -->
+        <h3>Trilogia "I nostri antenati"</h3>
+        <ul>
+            <li>
+                Romanzi
+                <ul>
+                    <li>Il visconte dimezzato (1952)</li>
+                    <li>Il barone rampante (1957)</li>
+                    <li>Il cavaliere inesistente (1959)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Testo</h2>
+        <p>
+            <strong>strong</strong>: importante (grassetto).
+            <em>em</em>: enfasi (corsivo).
+            <mark>mark</mark>: evidenziato.
+            H<sub>2</sub>O e 10<sup>3</sup>: pedice e apice.
+        </p>
+        <blockquote>
+            <p>"Un classico è un libro che non ha mai finito di dire quel che ha da dire."</p>
+        </blockquote>
+
+        <h2>Link</h2>
+        <!-- href = indirizzo di destinazione. Il testo tra i tag è quello cliccabile -->
+        <p>
+            <!-- link ESTERNO: indirizzo completo, con https:// -->
+            <a href="https://it.wikipedia.org/wiki/Italo_Calvino">Calvino su Wikipedia</a>
+        </p>
+        <p>
+            <!-- target="_blank": apre in una nuova scheda -->
+            <a href="https://www.openlibrary.org" target="_blank">Open Library (nuova scheda)</a>
+        </p>
+        <p>
+            <!-- link INTERNO: un altro file della stessa cartella -->
+            <a href="01-struttura.html">Torna alla pagina 01</a>
+        </p>
+        <p>
+            <!-- link a un punto della stessa pagina: # + id dell'elemento -->
+            <a href="#fine">Vai in fondo alla pagina</a>
+        </p>
+        <p>
+            <!-- link speciali -->
+            <a href="mailto:biblioteca@example.com">Scrivi alla biblioteca</a> -
+            <a href="tel:+390212345678">Chiama</a>
+        </p>
+
+        <p style="margin-top: 600px" id="fine">Fine della pagina.</p>
+        <!-- questo paragrafo serve solo per aggiungere spazio in fondo alla pagina -->
+        <!-- id: nome unico di un elemento nella pagina. Lo usano i link con #,
+         il CSS e JavaScript -->
+    </body>
+
+</html>

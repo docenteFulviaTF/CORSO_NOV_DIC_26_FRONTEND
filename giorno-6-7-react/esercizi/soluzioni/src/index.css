@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  color: #222;
+  background-color: #f6f7f9;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.app-testata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #0b2e63;
+  color: white;
+}
+.app-testata h1 {
+  margin: 0 16px 0 0;
+  font-size: 1.3rem;
+}
+.app-testata button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #ffffff66;
+}
+.app-testata button.attivo {
+  background-color: white;
+  color: #0b2e63;
+}
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+button {
+  padding: 6px 12px;
+  font: inherit;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  background-color: #2e6db4;
+  color: white;
+}
+button.secondario {
+  background-color: #e0e6ef;
+  color: #222;
+}
+button.pericolo {
+  background-color: #b00020;
+}
+input,
+select {
+  padding: 6px 8px;
+  font: inherit;
+}
+.griglia {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.12);
+}
+.card img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+.card-corpo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  padding: 12px;
+}
+.card-corpo h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+.card-corpo p {
+  margin: 0;
+  color: #666;
+}
+.card.esaurito img {
+  filter: grayscale(1);
+  opacity: 0.6;
+}
+.badge {
+  align-self: flex-start;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background-color: #cfe0f2;
+  font-size: 0.8rem;
+}
+.filtri {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.errore {
+  color: #b00020;
+}
+.riquadro {
+  padding: 16px;
+  margin-bottom: 16px;
+  background: white;
+  border-radius: 8px;
+}
+.badge-rosso {
+  background-color: #b00020;
+  color: white;
+}

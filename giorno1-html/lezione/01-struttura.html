@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- 01 - LA STRUTTURA DI UNA PAGINA
+     In VS Code: file nuovo, si scrive ! e si preme Tab (Emmet).
+     Poi: clic destro > Open with Live Server.
+
+     La prima riga, <!DOCTYPE html>, dice al browser: questa è una pagina HTML moderna (HTML5). -->
+
+<html lang="it">
+  <!-- lang="it": la lingua della pagina. Serve ai lettori di schermo e ai traduttori -->
+
+  <head>
+    <!-- HEAD: informazioni SULLA pagina. Non si vedono nella finestra -->
+    <meta charset="UTF-8" />
+    <!-- codifica dei caratteri: senza, le lettere accentate possono diventare simboli strani -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- sul telefono la pagina usa la larghezza reale dello schermo (domani, responsive) -->
+
+    <title>Bookshelf - la mia prima pagina</title>
+    <!-- il testo nella scheda del browser e nei risultati di Google -->
+  </head>
+
+  <body>
+    <!-- BODY: tutto quello che si vede -->
+    <h1>Bookshelf</h1>
+    <p>Il catalogo dei libri del corso.</p>
+
+    <!-- Un TAG si apre <p> e si chiude </p>. Il tutto si chiama ELEMENTO.
+         Gli elementi si annidano: quello aperto per ultimo si chiude per primo. -->
+    <p>Questo paragrafo contiene una parola <strong>importante</strong>.</p>
+
+    <!-- Alcuni elementi non hanno contenuto e non si chiudono: elementi VUOTI -->
+    <hr />
+    <p>Riga sopra e a capo<br />dentro lo stesso paragrafo.</p>
+
+    <!-- Gli spazi e gli a capo nel codice NON contano:
+         il browser li riduce a un solo spazio. -->
+    <p>Questo      testo     ha
+       molti spazi       nel codice, ma nel browser no.</p>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf - componenti UI</title>
+    <link rel="stylesheet" href="componenti.css" />
+  </head>
+  <body>
+    <!-- COMPONENTI UI: pezzi di interfaccia che si riusano in tutto il sito.
+         Ogni componente è una classe (btn), con le sue varianti (btn-secondario).
+         È quello che fanno librerie come Bootstrap, qui scritto a mano con quello che abbiamo visto oggi. -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Bookshelf</a>
+      <ul class="navbar-menu">
+        <li><a href="#">Catalogo</a></li>
+        <li><a href="#">Autori</a></li>
+      </ul>
+    </nav>
+
+    <main class="contenitore">
+      <h1>Componenti</h1>
+
+      <h2>Pulsanti</h2>
+      <p>
+        <button type="button" class="btn">Primario</button>
+        <button type="button" class="btn btn-secondario">Secondario</button>
+        <button type="button" class="btn btn-pericolo">Elimina</button>
+        <a href="#" class="btn">Un link con l'aspetto di un pulsante</a>
+      </p>
+
+      <h2>Avvisi</h2>
+      <p class="avviso avviso-successo">Libro aggiunto al catalogo.</p>
+      <p class="avviso avviso-errore">Il titolo è obbligatorio.</p>
+
+      <h2>Badge</h2>
+      <p>
+        <span class="badge">Romanzo</span>
+        <span class="badge badge-rosso">In prestito</span>
+      </p>
+
+      <h2>Card</h2>
+      <div class="griglia-card">
+        <article class="card">
+          <img src="img/barone-rampante.svg" alt="Copertina de Il barone rampante" />
+          <div class="card-corpo">
+            <h3>Il barone rampante</h3>
+            <p>Italo Calvino, 1957</p>
+            <a href="#" class="btn">Dettagli</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/nome-della-rosa.svg" alt="Copertina de Il nome della rosa" />
+          <div class="card-corpo">
+            <h3>Il nome della rosa</h3>
+            <p>Umberto Eco, 1980</p>
+            <a href="#" class="btn">Dettagli</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/lessico-famigliare.svg" alt="Copertina de Lessico famigliare" />
+          <div class="card-corpo">
+            <h3>Lessico famigliare</h3>
+            <p>Natalia Ginzburg, 1963</p>
+            <a href="#" class="btn">Dettagli</a>
+          </div>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

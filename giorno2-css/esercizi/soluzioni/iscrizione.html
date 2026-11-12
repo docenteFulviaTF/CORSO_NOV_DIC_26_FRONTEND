@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf - iscrizione</title>
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+  <body>
+    <h1>Iscrizione alla biblioteca</h1>
+
+    <form method="post">
+      <label for="nome">Nome e cognome</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="telefono">Telefono</label>
+      <input type="tel" id="telefono" name="telefono" />
+
+      <label for="nascita">Data di nascita</label>
+      <input type="date" id="nascita" name="nascita" />
+
+      <fieldset>
+        <legend>Tipo di tessera</legend>
+        <label><input type="radio" name="tessera" value="base" checked /> Base</label>
+        <label><input type="radio" name="tessera" value="studente" /> Studente</label>
+        <label><input type="radio" name="tessera" value="famiglia" /> Famiglia</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Generi preferiti</legend>
+        <label><input type="checkbox" name="generi[]" value="romanzi" /> Romanzi</label>
+        <label><input type="checkbox" name="generi[]" value="gialli" /> Gialli</label>
+        <label><input type="checkbox" name="generi[]" value="saggi" /> Saggi</label>
+        <label><input type="checkbox" name="generi[]" value="fantasy" /> Fantasy</label>
+        <label><input type="checkbox" name="generi[]" value="poesia" /> Poesia</label>
+      </fieldset>
+
+      <label for="fonte">Come ci hai conosciuto</label>
+      <select id="fonte" name="fonte">
+        <option value="">-- scegli --</option>
+        <option value="amici">Amici</option>
+        <option value="web">Sito web</option>
+        <option value="social">Social</option>
+        <option value="scuola">Scuola</option>
+      </select>
+
+      <label for="note">Note</label>
+      <textarea id="note" name="note" rows="4"></textarea>
+
+      <label class="in-riga">
+        <input type="checkbox" name="regolamento" required /> Accetto il regolamento
+      </label>
+
+      <button type="submit">Iscriviti</button>
+      <button type="reset" class="secondario">Annulla</button>
+    </form>
+    <!-- Con method="get" l'indirizzo diventa
+         iscrizione.html?nome=...&email=...&tessera=base&generi%5B%5D=gialli&...
+         Compaiono i valori dei campi con name. I checkbox non spuntati non compaiono. -->
+  </body>
+</html>

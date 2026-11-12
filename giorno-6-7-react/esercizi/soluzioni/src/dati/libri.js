@@ -1,0 +1,155 @@
+// Gli stessi 15 libri dei giorni precedenti, come modulo: si importa con
+// import { libri } from "../dati/libri.js";
+// Le copertine stanno in public/img: nel browser l'indirizzo è /img/...
+export const libri = [
+  {
+    "id": 1,
+    "titolo": "Il barone rampante",
+    "autore": "Italo Calvino",
+    "anno": 1957,
+    "pagine": 270,
+    "genere": "Romanzo",
+    "disponibile": true,
+    "copertina": "/img/barone-rampante.svg"
+  },
+  {
+    "id": 2,
+    "titolo": "Le città invisibili",
+    "autore": "Italo Calvino",
+    "anno": 1972,
+    "pagine": 168,
+    "genere": "Romanzo",
+    "disponibile": false,
+    "copertina": "/img/citta-invisibili.svg"
+  },
+  {
+    "id": 3,
+    "titolo": "Marcovaldo",
+    "autore": "Italo Calvino",
+    "anno": 1963,
+    "pagine": 160,
+    "genere": "Racconti",
+    "disponibile": true,
+    "copertina": null
+  },
+  {
+    "id": 4,
+    "titolo": "La storia",
+    "autore": "Elsa Morante",
+    "anno": 1974,
+    "pagine": 660,
+    "genere": "Romanzo",
+    "disponibile": true,
+    "copertina": null
+  },
+  {
+    "id": 5,
+    "titolo": "L'isola di Arturo",
+    "autore": "Elsa Morante",
+    "anno": 1957,
+    "pagine": 400,
+    "genere": "Romanzo",
+    "disponibile": false,
+    "copertina": null
+  },
+  {
+    "id": 6,
+    "titolo": "Il sistema periodico",
+    "autore": "Primo Levi",
+    "anno": 1975,
+    "pagine": 240,
+    "genere": "Racconti",
+    "disponibile": true,
+    "copertina": null
+  },
+  {
+    "id": 7,
+    "titolo": "Se questo è un uomo",
+    "autore": "Primo Levi",
+    "anno": 1947,
+    "pagine": 220,
+    "genere": "Saggio",
+    "disponibile": true,
+    "copertina": "/img/se-questo-e-un-uomo.svg"
+  },
+  {
+    "id": 8,
+    "titolo": "Il nome della rosa",
+    "autore": "Umberto Eco",
+    "anno": 1980,
+    "pagine": 503,
+    "genere": "Giallo",
+    "disponibile": true,
+    "copertina": "/img/nome-della-rosa.svg"
+  },
+  {
+    "id": 9,
+    "titolo": "Il pendolo di Foucault",
+    "autore": "Umberto Eco",
+    "anno": 1988,
+    "pagine": 509,
+    "genere": "Romanzo",
+    "disponibile": false,
+    "copertina": null
+  },
+  {
+    "id": 10,
+    "titolo": "Lessico famigliare",
+    "autore": "Natalia Ginzburg",
+    "anno": 1963,
+    "pagine": 230,
+    "genere": "Romanzo",
+    "disponibile": true,
+    "copertina": "/img/lessico-famigliare.svg"
+  },
+  {
+    "id": 11,
+    "titolo": "Il giorno della civetta",
+    "autore": "Leonardo Sciascia",
+    "anno": 1961,
+    "pagine": 130,
+    "genere": "Giallo",
+    "disponibile": true,
+    "copertina": "/img/giorno-della-civetta.svg"
+  },
+  {
+    "id": 12,
+    "titolo": "A ciascuno il suo",
+    "autore": "Leonardo Sciascia",
+    "anno": 1966,
+    "pagine": 160,
+    "genere": "Giallo",
+    "disponibile": false,
+    "copertina": null
+  },
+  {
+    "id": 13,
+    "titolo": "La donna della domenica",
+    "autore": "Fruttero e Lucentini",
+    "anno": 1972,
+    "pagine": 450,
+    "genere": "Giallo",
+    "disponibile": true,
+    "copertina": null
+  },
+  {
+    "id": 14,
+    "titolo": "Gita al faro",
+    "autore": "Virginia Woolf",
+    "anno": 1927,
+    "pagine": 230,
+    "genere": "Romanzo",
+    "disponibile": true,
+    "copertina": null
+  },
+  {
+    "id": 15,
+    "titolo": "Una stanza tutta per sé",
+    "autore": "Virginia Woolf",
+    "anno": 1929,
+    "pagine": 160,
+    "genere": "Saggio",
+    "disponibile": true,
+    "copertina": null
+  }
+];

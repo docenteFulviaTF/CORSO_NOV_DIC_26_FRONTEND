@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf - fetch</title>
+    <style>
+      body { font-family: system-ui, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 16px; }
+      .messaggio { padding: 8px 12px; border-radius: 6px; background: #cfe0f2; }
+      .messaggio.errore { background: #fbe3e6; color: #b00020; }
+      #lista li { padding: 4px 0; border-bottom: 1px solid #eee; }
+    </style>
+    <script src="fetch.js" defer></script>
+  </head>
+  <body>
+    <h1>Libri da un file JSON</h1>
+    <!-- Questa pagina va aperta con Live Server: aperta con doppio clic (file://)
+         il browser blocca fetch per motivi di sicurezza. -->
+    <p class="messaggio" id="messaggio"></p>
+    <ul id="lista"></ul>
+  </body>
+</html>

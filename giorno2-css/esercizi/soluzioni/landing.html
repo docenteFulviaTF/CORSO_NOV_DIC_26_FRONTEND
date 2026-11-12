@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf - la biblioteca online</title>
+    <link rel="stylesheet" href="css/landing.css" />
+  </head>
+  <body>
+    <header class="testata">
+      <a href="#" class="logo">Bookshelf</a>
+      <nav>
+        <ul class="menu">
+          <li><a href="#come-funziona">Come funziona</a></li>
+          <li><a href="#evidenza">In evidenza</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>La tua biblioteca, sempre con te</h1>
+        <p>Cerca tra migliaia di libri, prenotali online e ritirali quando vuoi.</p>
+        <div class="azioni">
+          <a href="#evidenza" class="btn">Sfoglia il catalogo</a>
+          <a href="#come-funziona" class="btn btn-secondario">Come funziona</a>
+        </div>
+      </section>
+
+      <section id="come-funziona" class="sezione">
+        <h2>Come funziona</h2>
+        <div class="passi">
+          <article class="passo">
+            <h3>1. Cerca</h3>
+            <p>Trova il libro per titolo, autore o genere.</p>
+          </article>
+          <article class="passo">
+            <h3>2. Prenota</h3>
+            <p>Un clic e il libro è messo da parte per te per tre giorni.</p>
+          </article>
+          <article class="passo">
+            <h3>3. Leggi</h3>
+            <p>Ritiralo in biblioteca: hai trenta giorni, rinnovabili.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="evidenza" class="sezione">
+        <h2>In evidenza</h2>
+        <div class="libri">
+          <article class="card">
+            <img src="img/barone-rampante.svg" alt="Copertina de Il barone rampante" />
+            <h3>Il barone rampante</h3>
+            <p>Italo Calvino</p>
+          </article>
+          <article class="card">
+            <img src="img/nome-della-rosa.svg" alt="Copertina de Il nome della rosa" />
+            <h3>Il nome della rosa</h3>
+            <p>Umberto Eco</p>
+          </article>
+          <article class="card">
+            <img src="img/lessico-famigliare.svg" alt="Copertina de Lessico famigliare" />
+            <h3>Lessico famigliare</h3>
+            <p>Natalia Ginzburg</p>
+          </article>
+          <article class="card">
+            <img src="img/giorno-della-civetta.svg" alt="Copertina de Il giorno della civetta" />
+            <h3>Il giorno della civetta</h3>
+            <p>Leonardo Sciascia</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="newsletter" class="sezione newsletter">
+        <h2>Le novità ogni mese</h2>
+        <form class="iscrizione" method="get">
+          <input type="email" name="email" placeholder="La tua email" aria-label="Email" required />
+          <button type="submit" class="btn">Iscriviti</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="piede">
+      <div>
+        <h2>Bookshelf</h2>
+        <p>La biblioteca del corso Full Stack.</p>
+      </div>
+      <div>
+        <h2>Orari</h2>
+        <p>Lunedì-venerdì 9-18</p>
+      </div>
+      <div>
+        <h2>Contatti</h2>
+        <p>biblioteca@example.com</p>
+      </div>
+    </footer>
+  </body>
+</html>

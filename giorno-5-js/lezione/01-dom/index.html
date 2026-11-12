@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf - DOM</title>
+    <link rel="stylesheet" href="stile.css" />
+    <script src="libri.js" defer></script>
+    <script src="dom.js" defer></script>
+  </head>
+
+  <body>
+    <!-- DOM (Document Object Model): il browser trasforma l'HTML in un albero di oggetti.
+         Con JavaScript si leggono e si modificano questi oggetti, e la pagina cambia SENZA ricaricarla. F12 > Elements mostra il DOM attuale, non il file HTML originale. -->
+    <header>
+      <h1 id="titolo">Bookshelf</h1>
+      <p>Il catalogo del corso</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Libro del giorno</h2>
+        <img id="copertina" src="img/barone-rampante.svg" alt="Copertina" width="120" />
+        <p id="descrizione">Testo che verrà sostituito.</p>
+      </section>
+
+      <section>
+        <h2>Note</h2>
+        <ul class="note">
+          <li>Prima nota</li>
+          <li class="evidenziato pippo pluto">Seconda nota</li>
+          <li class="da-togliere">Questa nota verrà tolta</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Catalogo (<span id="conteggio">0</span> libri)</h2>
+        <!-- vuoto: lo riempie JavaScript -->
+        <ul id="catalogo"></ul>
+      </section>
+
+      <h3 id="elementoDiProva">elemento di prova</h3>
+    </main>
+
+  </body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf - lista</title>
+    <style>
+      body {
+        font-family: system-ui, Arial, sans-serif;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 16px;
+      }
+      #lista li {
+        padding: 6px 0;
+        border-bottom: 1px solid #eee;
+      }
+      #lista li.non-disponibile {
+        color: #999;
+        text-decoration: line-through;
+      }
+    </style>
+    <script src="libri.js" defer></script>
+    <script src="es-5-1.js" defer></script>
+  </head>
+  <body>
+    <h1>Catalogo: <span id="totale">0</span> libri</h1>
+    <ul id="lista"></ul>
+  </body>
+</html>

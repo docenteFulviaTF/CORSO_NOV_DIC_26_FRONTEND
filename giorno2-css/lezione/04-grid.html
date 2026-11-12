@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf - grid</title>
+    <link rel="stylesheet" href="css/04-grid.css" />
+  </head>
+  <body>
+    <!-- GRID: righe e colonne insieme.
+         Flexbox: cose in fila (menu, pulsanti). Grid: griglie (catalogo, galleria). -->
+    <h1>Grid</h1>
+
+    <h2>1. Tre colonne uguali</h2>
+    <div class="griglia g1">
+      <div>1</div><div>2</div><div>3</div>
+      <div>4</div><div>5</div><div>6</div>
+    </div>
+
+    <h2>2. Colonne di larghezza diversa</h2>
+    <div class="griglia g2">
+      <div>200px</div><div>1fr</div><div>2fr</div>
+    </div>
+
+    <h2>3. Un elemento su due colonne</h2>
+    <div class="griglia g1">
+      <div class="largo">span 2</div><div>3</div>
+      <div>4</div><div>5</div><div>6</div>
+    </div>
+
+    <h2>4. Galleria che si adatta da sola</h2>
+    <p>Restringi la finestra: il numero di colonne cambia senza scrivere altro.</p>
+    <div class="galleria">
+      <img src="img/barone-rampante.svg" alt="Il barone rampante" />
+      <img src="img/nome-della-rosa.svg" alt="Il nome della rosa" />
+      <img src="img/se-questo-e-un-uomo.svg" alt="Se questo è un uomo" />
+      <img src="img/lessico-famigliare.svg" alt="Lessico famigliare" />
+      <img src="img/giorno-della-civetta.svg" alt="Il giorno della civetta" />
+      <img src="img/citta-invisibili.svg" alt="Le città invisibili" />
+    </div>
+  </body>
+</html>

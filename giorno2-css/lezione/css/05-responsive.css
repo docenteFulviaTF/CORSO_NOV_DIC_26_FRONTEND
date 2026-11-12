@@ -1,0 +1,68 @@
+/* MOBILE FIRST: prima si scrive lo stile per il telefono,
+   poi con @media (min-width: ...) si AGGIUNGE quello per gli schermi larghi. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* regola da mettere sempre: un'immagine non esce mai dal suo contenitore */
+img {
+  max-width: 100%;
+}
+
+/* ---------- TELEFONO ---------- */
+.testata {
+  display: flex;
+  flex-direction: column; /* logo sopra, menu sotto */
+  gap: 8px;
+  padding: 12px 16px;
+  background-color: #0b2e63;
+}
+.testata a {
+  color: white;
+  text-decoration: none;
+}
+.testata nav {
+  display: flex;
+  gap: 16px;
+}
+.logo {
+  font-weight: bold;
+}
+
+main {
+  padding: 16px;
+}
+
+.colonne {
+  display: grid;
+  grid-template-columns: 1fr; /* una colonna */
+  gap: 16px;
+}
+.colonne section {
+  background-color: #cfe0f2;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.foto {
+  width: 300px;
+  margin-top: 16px;
+}
+
+/* ---------- SCHERMI LARGHI: da 700px in su ---------- */
+@media (min-width: 700px) {
+  .testata {
+    flex-direction: row; /* logo e menu sulla stessa riga */
+    justify-content: space-between;
+    align-items: center;
+  }
+  .colonne {
+    grid-template-columns: repeat(3, 1fr); /* tre colonne */
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf - media</title>
+  </head>
+
+  <body>
+    <h1>Media e contenuti</h1>
+
+    <h2>Immagini</h2>
+    <!-- img è un elemento vuoto.
+         src: il percorso del file (relativo, come per i link).
+         alt: testo ALTERNATIVO, obbligatorio. Lo legge il lettore di schermo
+              e compare se l'immagine non si carica. Descrive l'immagine.
+         width / height: dimensioni in pixel. Indicarle evita che la pagina
+              "salti" mentre l'immagine si carica. -->
+    <img src="img/nome-della-rosa.svg" alt="Copertina de Il nome della rosa" width="200" height="300" />
+
+    <!-- immagine con percorso sbagliato: si vede il testo alt -->
+    <img src="img/non-esiste.jpg" alt="Questa immagine non esiste" width="200" height="300" />
+
+    <!-- Formati: JPG per le foto, PNG per immagini con trasparenza,
+         SVG per loghi e disegni (non perde qualità ingrandendo), WEBP per il web moderno. -->
+
+    <h2>Immagine con didascalia</h2>
+    <!-- figure: un contenuto (immagine, schema, codice) con la sua didascalia figcaption -->
+    <figure>
+      <img src="img/barone-rampante.svg" alt="Copertina de Il barone rampante" width="200" height="300" />
+      <figcaption>Il barone rampante, Einaudi 1957.</figcaption>
+    </figure>
+
+    <h2>Immagine cliccabile</h2>
+    <a href="https://it.wikipedia.org/wiki/Il_barone_rampante" target="_blank">
+      <img src="img/barone-rampante.svg" alt="Il barone rampante su Wikipedia" width="80" height="120" />
+    </a>
+
+    <h2>Video</h2>
+    <!-- controls: mostra i pulsanti. Senza, il video non si può avviare.
+         Altri attributi: autoplay (parte solo se c'è anche muted), loop, muted, poster -->
+    <video src="media/video-prova.mp4" controls width="480">
+      Il tuo browser non supporta il video.
+    </video>
+
+    <h2>Audio</h2>
+    <audio src="media/audio-prova.mp3" controls></audio>
+
+    <h2>Contenuti di altri siti: iframe</h2>
+    <!-- iframe: una pagina dentro la pagina. Si usa per video di YouTube e mappe.
+         Su YouTube: Condividi > Incorpora, e si copia il codice proposto.
+         Su OpenStreetMap: Condividi > HTML. -->
+    <iframe width="480" height="300"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=9.17%2C45.46%2C9.21%2C45.48&amp;layer=mapnik"
+      title="Mappa di Milano"></iframe>
+    <!-- title: descrive il contenuto dell'iframe, per i lettori di schermo -->
+  </body>
+
+</html>

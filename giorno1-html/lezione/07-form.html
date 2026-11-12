@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf - form</title>
+  </head>
+
+  <body>
+    <h1>Proponi un libro</h1>
+
+    <!-- FORM: raccoglie dati e li invia a un indirizzo.
+         action: dove inviare i dati. Senza action, i dati vanno alla pagina stessa.
+         method: GET (i dati finiscono nell'indirizzo) o POST (nel corpo della richiesta).
+         Qui usiamo GET per VEDERE i dati inviati: dopo l'invio guarda la barra degli indirizzi.
+         Nel modulo PHP sarà il server a ricevere questi dati. -->
+    <form method="get">
+      <!-- LABEL: il testo che descrive il campo.
+           for="titolo" la collega all'input con id="titolo":
+           cliccando sull'etichetta si attiva il campo. -->
+      <p>
+        <label for="titolo">Titolo</label>
+        <!-- name: il nome con cui il dato viene inviato. SENZA name il campo non viene inviato -->
+        <input type="text" id="titolo" name="titolino" placeholder="es. Il barone rampante" />
+      </p>
+
+      <p>
+        <!-- altro modo: l'input dentro la label, senza for e id -->
+        <label>Email <input type="email" name="email" /></label>
+      </p>
+
+      <p>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" />
+      </p>
+
+      <p>
+        <label for="anno">Anno</label>
+        <input type="number" id="anno" name="anno" />
+      </p>
+
+      <p>
+        <label for="data">Data di lettura</label>
+        <input type="datetime-local" id="data" name="data_lettura" />
+      </p>
+
+      <p>
+        <label for="sito">Sito dell'editore</label>
+        <input type="url" id="sito" name="sito" />
+      </p>
+
+      <p>
+        <label for="voto">Voto (1-10)</label>
+        <input type="range" id="voto" name="voto" min="1" max="10" />
+      </p>
+
+      <p>
+        <label for="colore">Colore della copertina</label>
+        <input type="color" id="colore" name="colore" />
+      </p>
+
+      <!-- SELECT: menu a tendina. value è il dato inviato, il testo è quello visibile -->
+      <p>
+        <label for="genere">Genere</label>
+        <select id="genere" name="genere">
+          <option value="">-- scegli --</option>
+          <option value="romanzo">Romanzo</option>
+          <option value="giallo">Giallo</option>
+          <option value="saggio" selected>Saggio</option>
+        </select>
+      </p>
+
+      <!-- TEXTAREA: testo su più righe. Si chiude, e il contenuto è il valore iniziale -->
+      <p>
+        <label for="trama">Trama</label><br />
+        <textarea id="trama" name="trama" rows="4" cols="40"></textarea>
+      </p>
+
+      <!-- FIELDSET + LEGEND: raggruppano campi collegati con un titolo -->
+      <fieldset>
+        <legend>Formato</legend>
+        <!-- RADIO: una sola scelta. Stesso name = stesso gruppo -->
+        <label><input type="radio" name="formato" value="cartaceo" checked /> Cartaceo</label>
+        <label><input type="radio" name="formato" value="ebook" /> Ebook</label>
+        <label><input type="radio" name="formato" value="audiolibro" /> Audiolibro</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dove l'hai sentito nominare</legend>
+        <!-- CHECKBOX: più scelte. Con [] nel name PHP riceverà un array -->
+        <label><input type="checkbox" name="fonti[]" value="amici" /> Amici</label>
+        <label><input type="checkbox" name="fonti[]" value="scuola" /> Scuola</label>
+        <label><input type="checkbox" name="fonti[]" value="web" /> Web</label>
+      </fieldset>
+
+      <p>
+        <label for="copertina">Foto della copertina</label>
+        <input type="file" id="copertina" name="copertina" accept="image/*" />
+        <!-- per inviare davvero un file servono method="post" ed enctype="multipart/form-data" -->
+      </p>
+
+      <!-- hidden: invisibile, ma viene inviato -->
+      <input type="hidden" name="origine" value="form-lezione" />
+
+      <!-- BUTTON: type="submit" invia, type="reset" svuota il form.
+           Un button senza type dentro un form è un submit. -->
+      <button type="submit">Invia</button>
+      <button type="reset">Svuota</button>
+    </form>
+  </body>
+
+</html>

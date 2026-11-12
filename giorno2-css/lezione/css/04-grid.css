@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.griglia {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.griglia > div {
+  background-color: #cfe0f2;
+  border: 1px solid #2e6db4;
+  padding: 16px;
+  text-align: center;
+}
+
+/* fr = una parte dello spazio libero. repeat(3, 1fr) = 1fr 1fr 1fr */
+.g1 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.g2 {
+  grid-template-columns: 200px 1fr 2fr;
+}
+
+.largo {
+  grid-column: span 2; /* occupa due colonne */
+}
+
+/* auto-fill + minmax: tante colonne quante ne entrano, ognuna larga almeno 150px */
+.galleria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+}
+.galleria img {
+  width: 100%;
+}

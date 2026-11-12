@@ -1,0 +1,134 @@
+/* VARIABILI CSS: un valore con un nome, dichiarato una volta in :root e usato con var().
+   Per cambiare il colore di tutti i componenti basta cambiare una riga. */
+:root {
+  --primario: #2e6db4;
+  --scuro: #0b2e63;
+  --chiaro: #cfe0f2;
+  --errore: #b00020;
+  --raggio: 6px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+  background-color: #f6f7f9;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contenitore {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* ---------- NAVBAR (Flexbox) ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: var(--scuro);
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+.navbar-logo {
+  font-weight: bold;
+}
+.navbar-menu {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- PULSANTI (box model) ---------- */
+.btn {
+  display: inline-block; /* un link è inline: così accetta padding come un blocco */
+  padding: 8px 16px;
+  border: 1px solid var(--primario);
+  border-radius: var(--raggio);
+  background-color: var(--primario);
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer; /* la manina */
+}
+.btn:hover {
+  background-color: var(--scuro);
+}
+.btn-secondario {
+  background-color: white;
+  color: var(--primario);
+}
+.btn-pericolo {
+  background-color: var(--errore);
+  border-color: var(--errore);
+}
+
+/* ---------- AVVISI ---------- */
+.avviso {
+  padding: 12px 16px;
+  border-radius: var(--raggio);
+}
+.avviso-successo {
+  background-color: #e3f2e6;
+}
+.avviso-errore {
+  background-color: #fbe3e6;
+  color: var(--errore);
+}
+
+/* ---------- BADGE ---------- */
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px; /* valore grande = forma a pillola */
+  background-color: var(--chiaro);
+  font-size: 0.8rem;
+}
+.badge-rosso {
+  background-color: var(--errore);
+  color: white;
+}
+
+/* ---------- CARD (Grid per la griglia, Flexbox dentro la card) ---------- */
+.griglia-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: var(--raggio);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.12);
+}
+.card-corpo {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* il corpo si allunga fino in fondo alla card */
+  padding: 16px;
+}
+.card-corpo h3 {
+  margin: 0 0 4px;
+}
+.card-corpo p {
+  margin: 0 0 12px;
+  color: #666;
+}
+.card-corpo .btn {
+  margin-top: auto; /* il pulsante va in fondo: tutte le card allineate */
+  text-align: center;
+}

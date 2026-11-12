@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf - tabelle</title>
+  </head>
+  <body>
+    <h1>Tabelle</h1>
+    <!-- Le tabelle servono per DATI in righe e colonne,
+         non per impaginare la pagina (per quello c'è il CSS, domani).
+         table: la tabella   tr: una riga (table row)
+         th: cella di intestazione   td: cella di dati
+         thead / tbody / tfoot: intestazione, corpo e piede -->
+
+    <table border="1">
+      <!-- border="1" è un attributo vecchio, usato qui solo per vedere le celle.
+           Da domani i bordi si fanno con il CSS. -->
+      <caption>Libri disponibili</caption>
+      <!-- caption: il titolo della tabella -->
+      <thead>
+        <tr>
+          <th>Titolo</th>
+          <th>Autore</th>
+          <th>Anno</th>
+          <th>Pagine</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Il barone rampante</td>
+          <td>Italo Calvino</td>
+          <td>1957</td>
+          <td>270</td>
+        </tr>
+        <tr>
+          <td>Il nome della rosa</td>
+          <td>Umberto Eco</td>
+          <td>1980</td>
+          <td>503</td>
+        </tr>
+        <tr>
+          <td>Lessico famigliare</td>
+          <td>Natalia Ginzburg</td>
+          <td>1963</td>
+          <td>230</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <!-- colspan: la cella occupa 3 colonne -->
+          <td colspan="3">Totale pagine</td>
+          <td>1003</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2>Unire celle in verticale</h2>
+    <table border="1">
+      <tr>
+        <th>Autore</th>
+        <th>Libro</th>
+      </tr>
+      <tr>
+        <!-- rowspan: la cella occupa 2 righe -->
+        <td rowspan="2">Italo Calvino</td>
+        <td>Il barone rampante</td>
+      </tr>
+      <tr>
+        <td>Le città invisibili</td>
+      </tr>
+    </table>
+  </body>
+</html>

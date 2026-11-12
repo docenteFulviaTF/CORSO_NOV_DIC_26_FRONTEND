@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: system-ui, Arial, sans-serif;
+  background-color: #f6f7f9;
+}
+#catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.12);
+  overflow: hidden;
+}
+.card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+.card h2 {
+  margin: 12px 12px 4px;
+  font-size: 1.05rem;
+}
+.card p {
+  margin: 0 12px 8px;
+  color: #666;
+}
+.card .badge {
+  align-self: flex-start;
+  margin: 0 12px 12px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background-color: #cfe0f2;
+  font-size: 0.8rem;
+}
+.card .badge-rosso {
+  background-color: #b00020;
+  color: white;
+}
+.card.esaurito img {
+  filter: grayscale(1);
+  opacity: 0.6;
+}
+.filtri {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.filtri input[type="search"],
+.filtri select {
+  padding: 6px 8px;
+  font: inherit;
+}
+.filtri input[type="search"] {
+  flex: 1 1 220px;
+}
+.card .azioni {
+  display: flex;
+  gap: 8px;
+  margin: auto 12px 12px;
+}
+.card .azioni button {
+  flex: 1;
+}
+button {
+  padding: 6px 10px;
+  font: inherit;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  background: #2e6db4;
+  color: white;
+}
+button.pericolo {
+  background: #b00020;
+}
+.messaggio.errore {
+  color: #b00020;
+}
+.form-libro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+}
+.form-libro input,
+.form-libro select {
+  padding: 6px 8px;
+  font: inherit;
+}

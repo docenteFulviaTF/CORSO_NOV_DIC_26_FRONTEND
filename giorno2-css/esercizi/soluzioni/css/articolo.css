@@ -1,0 +1,36 @@
+body {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  color: #333;
+  background-color: #fafaf7;
+}
+
+h1,
+h2 {
+  color: #0b2e63;
+}
+
+.autore {
+  font-style: italic;
+  color: gray;
+}
+
+article {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+a {
+  color: #2e6db4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+blockquote {
+  border-left: 4px solid #2e6db4;
+  padding-left: 16px;
+  font-style: italic;
+}

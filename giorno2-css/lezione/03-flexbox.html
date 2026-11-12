@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf - flexbox</title>
+    <link rel="stylesheet" href="css/03-flexbox.css" />
+  </head>
+
+  <body>
+    <!-- FLEXBOX: dispone i FIGLI di un contenitore in fila (riga o colonna).
+         display: flex si scrive sul CONTENITORE, e agisce sui suoi figli diretti. -->
+    <h1>Flexbox</h1>
+
+    <h2>1. display: flex - i figli in riga</h2>
+    <div class="box es1">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <h2>2. justify-content - in orizzontale</h2>
+    <p>flex-start, center, flex-end, space-between: prova a cambiare il valore nel CSS</p>
+    <div class="box es2">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+
+    <h2>3. align-items - in verticale</h2>
+    <div class="box es3">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <h2>4. flex-wrap e gap - le schede vanno a capo</h2>
+    <div class="box es4">
+      <div>Libro 1</div>
+      <div>Libro 2</div>
+      <div>Libro 3</div>
+      <div>Libro 4</div>
+      <div>Libro 5</div>
+    </div>
+
+    <h2>5. flex: 1 - chi prende lo spazio libero</h2>
+    <div class="box es5">
+      <div>fisso</div>
+      <div class="cresce">flex: 1</div>
+    </div>
+
+    <h2>6. Una barra di navigazione</h2>
+    <nav class="navbar">
+      <a href="#" class="logo"><img src="img/logo.svg" alt="logo bookshelf"></a>
+      <ul>
+        <li><a href="#">Catalogo</a></li>
+        <li><a href="#">Autori</a></li>
+        <li><a href="#">Contatti</a></li>
+      </ul>
+    </nav>
+  </body>
+
+</html>

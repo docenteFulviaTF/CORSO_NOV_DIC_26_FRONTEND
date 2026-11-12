@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* solo per vedere le scatole */
+.box {
+  border: 2px dashed #2e6db4;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+.box > div {
+  background-color: #cfe0f2;
+  border: 1px solid #2e6db4;
+  padding: 10px 16px;
+}
+
+/* 1 */
+.es1 {
+  display: flex;
+}
+
+/* 2 */
+.es2 {
+  display: flex;
+  justify-content: center;
+  /*gap: 20px;ha senso nel center start e end*/
+  justify-content: flex-end;
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+/* 3: align-items funziona se il contenitore è più alto dei figli */
+.es3 {
+  display: flex;
+  align-items: center;
+  height: 120px;
+}
+
+/* 4 */
+.es4 {
+  display: flex;
+  flex-wrap: wrap;
+  /* senza, i figli si stringono tutti su una riga */
+  gap: 12px; /* spazio tra i figli */
+}
+.es4 > div {
+  width: 180px;
+}
+
+/* 5 */
+.es5 {
+  display: flex;
+  gap: 8px;
+}
+.es5 .cresce {
+  flex: 1;
+}
+
+/* 6: logo a sinistra, menu a destra, tutto centrato in verticale */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #0b2e63;
+  margin: 0;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+.navbar .logo img {
+  height: 25px;
+}
+.navbar ul {
+  display: flex; /* anche la lista è un contenitore flex */
+  gap: 20px;
+  list-style: none; /* toglie i pallini */
+  margin: 0;
+  padding: 0;
+}
+
+/* Altre due proprietà utili:
+   flex-direction: column;   i figli in colonna invece che in riga
+   margin-left: auto;        su un figlio: lo spinge tutto a destra */
